@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Reservation | PAWS</title>
+<link rel="icon" href="random/icon.ico" type="image/x-icon"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/reservation.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!--nav icon-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--Latest jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+<!--popper js--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 
+<!-- java -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!--calender-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!--responsive-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Font-->
+<link href="https://fonts.googleapis.com/css?family=Galada&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+
+</head>
+<body>
+
+<!--responsive dropdown-->
+<script>
+			$(document).ready(function(){
+				$('.dropdown-submenu a.test').on("click", function(e){
+					$(this).next('ul').toggle("slow");
+					e.stopPropagation();
+					e.preventDefault();
+				});
+			});
+	</script>
+<!--responsive dropdown-->
+
+		<nav class="fixed-nav-bar">
+
+		
+		<ul class="nav_bar">	
+				<li><a href="index.html" id="logo"><img src="random/logo.jpg" height="80" width="90" alt="Logo" class="img-responsive" /></a></li>
+				<li class="dropdown">	
+					Menu 	
+				<ul class="dropdown-content">
+					<li>	<a href="Menu.html">Exclusive for you</a></li>
+					<li>	<a href="Pet.html">Exclusive for pets</a></li>
+				</ul>
+				</li>
+
+				<li> <a href="reservation.html">Reservation</a> </li>
+				<li><a href="AboutUs.html">About us</a></li> 
+				<li><a href="location.html"> Location</a></li>				
+				<li><a href="signIn.html">Sign In</a></li>
+			</ul>
+
+
+				<div class="icon">
+					<div class="dropdown">
+						<button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-menu-hamburger"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li> <a href="index.html">Home</a> </li>
+							<li> <a href="reservation.html">Reservation</a> </li>
+							<li><a href="aboutUs.html">About us</a></li> 
+							<li><a  href="location.html"> Location</a></li>				
+							<li><a href="signIn.html">Sign In</a></li>
+								<li class="dropdown-submenu">
+								<a class="test" href="#">Menu<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>	<a href="Menu.html">Exclusive for you</a></li>
+									<li>	<a href="Pet.html">Exclusive for pets</a></li>			
+								</ul>													
+						</ul>
+						</div>
+					</div>
+					
+		</nav> 
+
+
+<div class="main" id="section1">
+	<div class="img">	
+		<img src="image_booking/cafe3.jpg" height="722" width="1533" alt="booking"/>
+			<div class="title fadeIn"><h1>Book A Table</h1></div>
+			<div class="btn_animate">
+			<div class="btn1">
+			<a href="#section2">
+				
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			</div>
+			</div>
+	</div>
+</div>
+<div class="main" id="section2">
+<br>
+<div id="time">
+<h2>Reservation Times</h2>
+<dl>
+<dt><b>Lunch Time</b></dt>
+<dd>Monday to Saturday: From 12.30pm<br>Sunday: From 12.00pm<br></dd>
+<dt><b>Dinner Time</b></dt>
+<dd>Monday to Saturday: From 6.30pm</dd>
+</dl></div>
+<hr>
+<div id="note">
+<h3 style="font-size:30px;">Please Note</h3>
+<p>6:30pm bookings are until 8:30pm.<br>7pm bookings are until 9pm.<br>
+	Due to a planning restricton our guests must leave <br>
+	by 11pm on Monday to Thursday<br>
+	and by 11.20pm on Friday to Saturday.</p>
+</div>
+</div>
+
+<script>
+	function submitFunction(){
+	if(document.forms[0].pax.value=="")
+	{
+		alert("Pax field cannot be empty");
+		return false;
+	}	
+	if(document.forms[0].name.value==""){
+	alert("Name field cannot be empty");
+	return false;
+	}
+	if(document.forms[0].phone.value=="")
+	{
+		alert("Phone field cannot be empty");
+		return false;
+	}
+
+	alert("Thank you for your submission.");
+	return true;
+	}
+
+</script>
+
+<div class="containerimg">
+<div class="box">	
+	<form method="post" action="#" autocomplete="off">
+	PAX:*<br>&nbsp;<input type="text" name="pax" id="pax" size="10" required maxlength="2" >
+	<br><br>
+	NAME ON RESERVATION:*<br>&nbsp;<input type="text" name="name" id="name" size="26" required>
+	<br><br>
+	Phone Number:*<br>&nbsp;<input type="text" name="phone" id="phone" size="26" required>
+	<br><br>
+	MESSAGE:<br>&nbsp;<textarea style="height:170px;width:400px;" name="MESSAGE" ></textarea>
+	</form>
+</div>
+
+<div class="container1">
+<div style="overflow:hidden;">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="datetimepicker12"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('#datetimepicker12').datetimepicker({
+                inline: true,
+                sideBySide: true
+            });
+        });
+    </script>
+</div>
+</div>
+
+<div>
+<button onclick="submitFunction()" class="button"><span>Submit </span></button>
+</div>
+</div>
+
+
+<!-- Footer -->
+
+<footer class="page-footer">
+
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div id="footer_contacts" class="col-md-3 mt-md-0 mt-3"> <!--mt= margin top-->
+        <h5 class="heading">Contact Us</h5>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-google-plus-circle"></a>
+		<ul class="contacts">
+		 <li>
+			Phone Number:
+          </li>
+          <li>
+           +603-80987654
+		  </li>
+		</ul>
+      </div>
+
+      <!-- Grid column -->
+      <div id="footer_hours" class="col-md-3 mb-md-0 mb-3">  <!--mb= margin bottom-->
+
+        <!-- Operating hourse -->
+        <h5 class="heading">Operating Hours</h5>
+		
+        <ul class="hours">
+          <li>
+			Monday : 9am-9pm
+          </li>
+          <li>
+            Tuesday : 9am-9pm
+          </li>
+          <li>
+           Wednesday : 9am-9pm
+          </li>
+          <li>
+			Friday : 9am-9pm
+          </li>
+		  <li>
+			Saturday : 9am-9pm
+          </li>
+		  <li>
+			Sunday : 9am-9pm
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mt-5">
+       <img src="random/Paws.jpg" alt="logo" class="rounded-circle" height="100" width="100">
+	   <p id="logoDes">Paws SDN.BHD</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright">All Rights Reserved © 2019 Paws||
+    <a href="https//:www.paws.com.my">Paws</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</body>
+</html>

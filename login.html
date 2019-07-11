@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login | PAWS</title>
+<link rel="icon" href="random/icon.ico" type="image/x-icon"/>
+<meta charset="utf-8">
+<link rel ="stylesheet" href="css/login.css" type="text/css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!--nav icon-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!--responsive-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+
+</head>
+<body>
+<header>
+<script>
+			$(document).ready(function(){
+				$('.dropdown-submenu a.test').on("click", function(e){
+					$(this).next('ul').toggle("slow");
+					e.stopPropagation();
+					e.preventDefault();
+				});
+			});
+	</script>
+
+		<nav class="fixed-nav-bar">
+
+		
+		<ul class="nav_bar">	
+				<li><a href="index.html" id="logo"><img src="random/logo.jpg" height="80" width="90" alt="Logo" class="img-responsive" /></a></li>
+				<li class="dropdown">	
+					Menu 	
+				<ul class="dropdown-content">
+					<li>	<a href="Menu.html">Exclusive for you</a></li>
+					<li>	<a href="Pet.html">Exclusive for pets</a></li>
+				</ul>
+				</li>
+
+				<li> <a href="reservation.html">Reservation</a> </li>
+				<li><a href="AboutUs.html">About us</a></li> 
+				<li><a href="location.html"> Location</a></li>				
+				<li><a href="login.html">Sign In</a></li>
+			</ul>
+
+
+				<div class="icon">
+					<div class="dropdown">
+						<button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-menu-hamburger"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li> <a href="index.html">Home</a> </li>
+							<li> <a href="reservation.html">Reservation</a> </li>
+							<li><a href="AboutUs.html">About us</a></li> 
+							<li><a  href="location.html"> Location</a></li>				
+							<li><a href="login.html">Sign In</a></li>
+								<li class="dropdown-submenu">
+								<a class="test" href="#">Menu<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>	<a href="Menu.html">Exclusive for you</a></li>
+									<li>	<a href="Pet.html">Exclusive for pets</a></li>			
+								</ul>													
+						</ul>
+						</div>
+					</div>
+					
+		</nav> 
+
+</header>
+<div class="wrap">
+
+
+<div class="login-box">
+<h1>Login</h1>
+
+<div class="textbox">
+<input type="text" placeholder="Username" name ="name" value="">
+</div>
+
+<br>
+<div class="textbox">
+<input type="Password" placeholder="Password" name ="password" value="">
+</div>
+
+<input type="submit" value ="Sign In" >
+<div class= "link">
+<a href="SignUp.html"> No account? Create one !</a>
+</div>
+</div>
+
+
+
+</div>
+
+
+<br><br><br>
+
+
+<!-- Footer -->
+<footer class="page-footer">
+
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div id="footer_contacts" class="col-md-3 mt-md-0 mt-3"> <!--mt= margin top-->
+        <h5 class="heading">Contact Us</h5>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-google-plus-circle"></a>
+		<ul class="contacts">
+		 <li>
+			Phone Number:
+          </li>
+          <li>
+           +603-80987654
+          </li>
+		</ul>
+      </div>
+
+      <!-- Grid column -->
+      <div id="footer_hours" class="col-md-3 mb-md-0 mb-3">  <!--mb= margin bottom-->
+
+        <!-- Operating hourse -->
+        <h5 class="heading">Operating Hours</h5>
+		
+        <ul class="hours">
+          <li>
+			Monday : 9am-9pm
+          </li>
+          <li>
+            Tuesday : 9am-9pm
+          </li>
+          <li>
+           Wednesday : 9am-9pm
+          </li>
+          <li>
+			Friday : 9am-9pm
+          </li>
+		  <li>
+			Saturday : 9am-9pm
+          </li>
+		  <li>
+			Sunday : 9am-9pm
+          </li>
+        </ul>
+
+	</div>
+
+  
+      <div class="col-md-6 mb-md-0 mt-5">
+       <img src="random/Paws.jpg" alt="Logo" class="rounded-circle" height="100" width="100">
+	   <p id="logoDes">Paws SDN.BHD</p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright">All Rights Reserved © 2019 Paws ||
+    <a href="https//:www.paws.com.my">Paws</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

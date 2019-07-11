@@ -1,0 +1,398 @@
+body
+{
+font-size:100%;
+overflow-x: hidden;
+}
+/* nav bar*/
+
+	.fixed-nav-bar {
+	  position: fixed;
+	  z-index: 9999;
+	  width: 100%;
+	}
+	
+	.nav_bar
+	{ 	
+		background-color:black;
+		list-style:none;
+		text-align:center;
+		width:170%;
+		margin-left:-40%;
+		position:relative;
+		padding:1%;
+    } 
+		#logo
+	{
+		display:inline-block;
+		margin-top:-0.7%;
+		margin-left:-8%;
+		position:absolute;
+
+	}
+	
+	.dropdown {
+	position: absolute;
+	display: inline-block;
+	color:white;
+	
+	}
+
+	.dropdown  {
+	  font-size: 20px;  
+	  border: none;
+	  outline: none;
+	  color: white;
+	  background-color: black;
+	  margin-left:-6%;
+	  margin-top:0%;
+	  position:absolute;
+	  font-weight:bold;
+	  padding:5%;
+	  
+	}
+
+	.dropdown:hover{
+	  
+	  color:gray;
+
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: black;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	  margin-top:10%;
+	  margin-left:-35%;
+		padding:5%;
+	}
+
+	.dropdown-content a {
+	  color: white;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+		font-size:15px;
+	}
+
+	.dropdown-content a:hover {
+	  background-color: black;
+	  text-decoration: none;
+	  color:gray;
+	}
+
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	  text-decoration: none;
+	}
+	.nav_bar li 
+	{
+		display:inline-block;
+		padding:0.2% 2% 0.8% 2%;
+		font-size:18px;
+		font-weight:bold;
+
+	}
+	
+    .nav_bar li a 
+	{ 
+		color:white; 
+		text-decoration: none; 
+    } 
+    .nav_bar a:hover { 
+        
+        color: gray; 
+		
+    } 
+	.icon{display:none;}
+/*Content*/
+
+.parallax {
+	/*image used */
+	background-image: url("../image_menu/blackCafepic.jpg");
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+h2
+{
+	padding: 3%;
+	font-size: 44px;
+	color: white;
+	text-align: center;
+	font-family: "Allerta Stencil";
+}
+#mainCourse
+{
+	padding: 3%;
+	font-size: 44px;
+	color: white;
+	text-align: center;
+	font-family: "Allerta Stencil";
+	margin-top:8%;
+}
+.col-md-3
+{
+	padding-top:3%;
+	padding-bottom:2%;
+}
+.margin-left_D
+{
+	background-color: white;
+	}
+
+
+.margin-left_D h4
+{
+	text-align:center;
+	font-size:29px;	
+	padding-top: 6%;
+	font-family: 'Allura';
+}
+
+.margin-left_B
+{
+	background-color: white;
+}
+.margin-left_B h4
+{
+	text-align:center;
+	font-size:29px;	
+	padding-top: 6%;
+	font-family: 'Allura';
+}
+
+.margin-left_M
+{
+	background-color: white;
+}
+
+.margin-left_M img {margin-left:22%;}
+.margin-left_B img {margin-left:22%;}
+.margin-left_D img {margin-left:22%;}
+
+.margin-left_M h4
+{
+	font-size:29px;	
+	padding-top: 6%;
+	text-align: center;
+	font-family: 'Allura';
+}
+.font-italic
+{
+	text-align: center;
+}
+
+.display-4
+{
+	text-align:center;
+	font-size:22px;
+	margin-top:10%;
+	margin-bottom:4%;
+	font-style: italic;
+	font-family: "Assistant";
+}
+
+.button {
+  display: inline-block;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 2%;
+  width: 20%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 40%;
+  margin-bottom: 6%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/*back to top*/
+html{
+	scroll-behavior:smooth;
+}
+
+#myBtn {
+display: none;
+position: fixed;
+bottom: 7%;
+right: 3%;
+z-index: 99;
+font-size: 18px;
+border: none;
+outline: none;
+color: white;
+cursor: pointer;
+padding: 1%;
+border-radius: 4px;
+}
+
+#myBtn:hover {
+background-color: #555;
+}
+
+
+
+
+
+
+/*Footer starts here*/
+
+.fa{
+	padding: 20px 9px 2px 5px;
+	color:white;
+	margin-left:5%;
+}
+
+.page-footer
+{
+background:#232323;
+color:white;
+font-size:34px;
+font-family: "Assistant";
+}
+.page-footer li{
+	color:white;
+	list-style:none;
+	font-size:17px;
+}
+.contacts li
+{
+	list-style:none;
+	padding-top: 4%;
+	margin-right:10%;
+}
+
+.heading {
+	border-top:2px solid white;
+	border-bottom: 2px solid white;
+	margin-left:10%;
+	font-size: 60%;
+	margin-right:5%;
+	padding-bottom:2%;
+	padding-top:2%;
+	margin-top: -2%;
+}
+.footer-copyright{
+	padding: 1% 1%;
+	font-size:12px;
+	text-align:center;
+}
+#logoDes
+{
+	text-align:center; 
+	font-size:11px; 
+	margin-left:1%;
+	padding-top:6%;
+}
+/*Footer ends here*/
+/*Responsive page layout*/
+@media only screen and (max-width: 768px){
+
+	/*nav*/
+	.icon{
+	margin-left: 90%;
+	margin-top:-16%;
+	display: block;
+	}
+	
+	.nav_bar
+	{
+		padding:6%;
+
+	}
+	.nav_bar li
+	{
+		display:none;
+	}
+	
+	/*content*/
+	.margin-left_D img {margin-left: 40%;}
+	.margin-left_M img {margin-left:40%;}
+	.margin-left_B img {margin-left:40%;}
+
+	.button{
+		margin-left:40%; width: 20%;
+		background-color: grey;
+		color: aliceblue;
+	}
+
+	.margin-left_M h4 
+	{
+		text-align: center;
+		margin-left: 8%;
+	}
+
+	.font-italic 
+	{
+		text-align: center;
+		margin-left: 8%;
+	}
+
+	.margin-left_B h4
+	 {
+		text-align: center;
+		margin-left: 8%;
+	}
+	.margin-left_D h4
+	 {
+		text-align: center;
+		margin-left: 8%;
+	}
+
+	/*footer*/
+	#footer_contacts {margin-right:4%;}
+	#footer_hours {margin-right:4%;}
+	.fa{margin-right: -1%;}
+	.contacts{margin-left:8%;padding-top:1.0rem;}
+	.hours li {margin-left:2%; padding-top: 1.0rem;}
+
+
+
+ }
+
+ @media only screen and (max-width: 500px){
+
+	.margin-left_D img {margin-left: 34%;}
+	.margin-left_M img {margin-left:34%;}
+	.margin-left_B img {margin-left:34%;}
+
+	.button{
+		 width: 20%;
+		background-color:rosybrown;
+		color: aliceblue;
+	}
+ }
